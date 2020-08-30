@@ -42,4 +42,4 @@ jobs:
         run: npm install -g surge
        
       - name: deploying on surge
-        run: surge ./build http://saad_simple_react.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build saad_simple_react.surge.sh --token ${{ secrets.SURGE_TOKEN }}
